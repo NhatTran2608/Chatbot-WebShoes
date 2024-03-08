@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+
+- story: Chào - hỏi size - tạm_biệt
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: size
+  - action: utter_func_size
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: inquire_quantity
+  - action: action_query_mongodb
+
+- story: Chào - cần liên hệ trực tiếp shop - tạm_biệt
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact
+  - action: utter_contact
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Chào - hỏi địa chỉ - tạm biệt
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: address
+  - action: utter_address
+  - intent: goodbye
+  - action: utter_goodbye

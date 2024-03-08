@@ -1,0 +1,78 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Xin chào
+    - hello
+    - Hey
+    - Cho mình hỏi
+    - Tư vấn giúp mình nhé
+    - Shop ơi
+    - Bạn ơi
+    - Chào shop
+    - hi
+    - hello there
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Tạm biệt
+    - Hẹn gặp lại
+    - Cảm ơn bạn đã tư vấn
+    - Cảm ơn bạn 
+    - good by
+    - cee you later
+    - good night
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thanks
+
+#địa chỉ cụ thể
+- intent: address
+  examples: |
+    - Cho mình hỏi về địa chỉ shop
+    - Shop mình nằm ở đâu vậy ạ
+    - Shop nằm ở đâu
+    - Địa chỉ cụ thể
+    - Em xin địa chỉ
+    - Shop có bán trực tiếp không
+
+
+#liên hệ trực tiếp
+- intent: contact
+  examples: |
+    - Mình cần liên hệ chăm sóc khách hàng
+    - Số điện thoại của shop
+    - Liên hệ qua email hoặc số điện thoại của shop
+    - Cần gặp nhân viên tư vấn trực tiếp
+    
+#hỏi size giày
+- intent: size
+  examples: |
+    - Cho mình hỏi về size giày ạ
+    - Cho mình hỏi kích thước chân ạ
+    - Mình có bảng kích thích không ạ
+    - Size chân
+    - Size giày
+    - Kích cỡ chân
+
+
+- intent: bot_challenge
+  examples: |
+    - Bạn là một robot?
+    - Bạn là một con người?
+    - Bạn có thể trò chuyện với tôi chứ
+    - Bạn có thể giúp tôi?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: inquire_quantity
+  examples: |
+    - Số lượng đã mua của sản phẩm là gì?
+    - Có bao nhiêu sản phẩm đã được mua?
+    - Số lượng đã bán của sản phẩm là bao nhiêu?

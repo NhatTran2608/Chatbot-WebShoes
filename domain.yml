@@ -1,0 +1,49 @@
+version: "3.1"
+
+intents:
+  - greet
+  - bot_challenge
+  - size
+  - address
+  - contact
+  - goodbye
+  - inquire_quantity
+
+responses:
+  utter_greet:
+  - text: "Chào anh(chị), em có thể giúp gì cho anh(chị) ạ 🥰"
+  - text: "Kính chào Quý khách"
+
+  utter_func_size:
+  - text: "Em gửi anh(chị) <a style='color: red;' target='_blank' href='https://giayxshop.vn/wp-content/uploads/2022/12/1-768x574.jpeg'>bảng size</a> ạ"
+
+  utter_contact:
+  - text: "Quý khách có thể liên hệ shop SĐT: 0915217024 hoặc Email: shoesCT@gmail.com"
+
+  utter_address:
+  - text: "Địa chỉ shop cụ thể nằm ở số 111, đường 3/2, phường Xuân Khánh, quận Ninh Kiều, TP.Cần Thơ"
+  - text: "Anh(chị) có thể ghé thăm shop em trực tiếp ở số 111, đường 3/2, phường Xuân Khánh, quận Ninh Kiều, TP.Cần Thơ"
+    
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Cảm ơn anh(chị). Nếu có thắc mắc gì khác cứ đặt câu hỏi cho em nhé!"
+  - text: "Dạ. Tạm biệt anh(chị)!"
+
+  utter_iamabot:
+  - text: "Em là robot, anh(chị) có cần gì thì cứ đặt câu hỏi đi ạ"
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+- action_query_mongodb  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
